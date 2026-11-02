@@ -1,0 +1,18 @@
+test_delayed_bye_trims_plc (__main__.Edges.test_delayed_bye_trims_plc) ... ok
+test_duplicate_and_garbage (__main__.Edges.test_duplicate_and_garbage) ... ok
+test_empty_bye (__main__.Edges.test_empty_bye) ... ok
+test_invalid_arguments (__main__.Edges.test_invalid_arguments) ... ok
+test_missing_first (__main__.Edges.test_missing_first) ... ok
+test_no_sender (__main__.Edges.test_no_sender) ... ok
+test_partial_frame (__main__.Edges.test_partial_frame) ... ok
+test_repeat_plc (__main__.Edges.test_repeat_plc) ... ok
+test_ssrc_reset (__main__.Edges.test_ssrc_reset) ... ok
+test_timeout_trims_plc (__main__.Edges.test_timeout_trims_plc) ... ok
+test_wav_chunks_and_reject_odd (__main__.Edges.test_wav_chunks_and_reject_odd) ... ok
+test_wrap_and_second_bye (__main__.Edges.test_wrap_and_second_bye) ... ok
+test_zero_plc (__main__.Edges.test_zero_plc) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 1.965s
+
+OK
