@@ -1,0 +1,15 @@
+{
+  "buffer_ms": 60,
+  "plc": "repeat",
+  "codec": "pcm",
+  "frames_out": 352,
+  "received": 352,
+  "lost": 0,
+  "late": 0,
+  "dup": 0,
+  "reordered": 0,
+  "overflow": 340,
+  "concealed": 340,
+  "avg_delay_ms": 6969.3,
+  "max_delay_ms": 7079.3
+}

@@ -1,0 +1,32 @@
+python3 tests/test_edges.py
+test_delayed_bye_trims_plc (__main__.Edges.test_delayed_bye_trims_plc) ... ok
+test_duplicate_and_garbage (__main__.Edges.test_duplicate_and_garbage) ... ok
+test_empty_bye (__main__.Edges.test_empty_bye) ... ok
+test_invalid_arguments (__main__.Edges.test_invalid_arguments) ... ok
+test_missing_first (__main__.Edges.test_missing_first) ... ok
+test_no_sender (__main__.Edges.test_no_sender) ... ok
+test_partial_frame (__main__.Edges.test_partial_frame) ... ok
+test_repeat_plc (__main__.Edges.test_repeat_plc) ... ok
+test_ssrc_reset (__main__.Edges.test_ssrc_reset) ... ok
+test_timeout_trims_plc (__main__.Edges.test_timeout_trims_plc) ... ok
+test_wav_chunks_and_reject_odd (__main__.Edges.test_wav_chunks_and_reject_odd) ... ok
+test_wrap_and_second_bye (__main__.Edges.test_wrap_and_second_bye) ... ok
+test_zero_plc (__main__.Edges.test_zero_plc) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 1.963s
+
+OK
+python3 tests/run_mock_tests.py "./voicelink send" "./voicelink recv" tests/data/aeueo-16kHz.wav
+run_mock_tests：send='./voicelink send' recv='./voicelink recv'
+  wav=/workspace/mmsp2026-team2-g6/tests/data/aeueo-16kHz.wav（112,541 samples，352 frames，7.0 s）port=5004/5005 輸出在 /tmp/voicelink_tests_he0ag8kk
+[PASS] 1 clean    225082 bytes 逐 byte 相同；lost=0 concealed=0  (7.9 s)
+[PASS] 2 loss     frame 數 352（輸入 352）；concealed=17 lost=17；lost > 0（搗蛋有生效）  (7.9 s)
+[PASS] 3 reorder  225082 bytes 逐 byte 相同；reordered=27 late=0 concealed=0  (7.9 s)
+[PASS] 4 dup      225082 bytes 逐 byte 相同；dup=38  (7.9 s)
+[PASS] 5 kill     recv 在 4.3 s 內結束（上限 7.3 s）；WAV 可讀，75 frames；frames_out=75 與 WAV 一致；收到的部分與輸入逐 byte 相同  (4.3 s)
+[PASS] 6 garbage  225082 bytes 逐 byte 相同；received=352（壞封包沒有被算進去）  (8.2 s)
+[PASS] 7 stats    stderr 恰好一行 STATS；buffer_ms／plc 與參數一致；frames_out=352 = (343−0−8−0) + 17；frames_out 等於輸入的 frame 數 352；avg_delay=68.1 ≤ max_delay=86.1；frames_out=352 received=343 lost=17 late=0 dup=8 reordered=34 overflow=0 concealed=17 avg_delay=68.1 ms  (7.9 s)
+[PASS] 8 mulaw    長度 225082 bytes（輸入 225082）；SQNR 37.8 dB（≥ 30.0）；bytes 116900 / pcm 229540 = 0.509（≈ 一半 ±2%）；STATS codec=mulaw（send 印 mulaw）；lost=0 concealed=0（CI 的慢機器偶爾會補 1–2 個，容許）；--loss 0.05：frame 數 352（輸入 352）；concealed=17 lost=17；lost > 0（搗蛋有生效）；codec=mulaw  (23.7 s)
+[SKIP] 9 adpcm    加分項，要 --with-adpcm（或 --only 9）才跑
+summary: 8/8 passed，1 skipped

@@ -1,0 +1,102 @@
+[
+  {
+    "codec": "pcm",
+    "plc": "zero",
+    "sqnr_db": 19.287523692294897,
+    "recv": {
+      "buffer_ms": 60,
+      "plc": "zero",
+      "codec": "pcm",
+      "frames_out": 352,
+      "received": 335,
+      "lost": 17,
+      "late": 0,
+      "dup": 0,
+      "reordered": 0,
+      "overflow": 0,
+      "concealed": 17,
+      "avg_delay_ms": 60.5,
+      "max_delay_ms": 61.5
+    },
+    "send": {
+      "codec": "pcm",
+      "frames": 352,
+      "bytes": 229540
+    }
+  },
+  {
+    "codec": "pcm",
+    "plc": "repeat",
+    "sqnr_db": 14.644098886203352,
+    "recv": {
+      "buffer_ms": 60,
+      "plc": "repeat",
+      "codec": "pcm",
+      "frames_out": 352,
+      "received": 335,
+      "lost": 17,
+      "late": 0,
+      "dup": 0,
+      "reordered": 0,
+      "overflow": 0,
+      "concealed": 17,
+      "avg_delay_ms": 60.9,
+      "max_delay_ms": 64.8
+    },
+    "send": {
+      "codec": "pcm",
+      "frames": 352,
+      "bytes": 229540
+    }
+  },
+  {
+    "codec": "mulaw",
+    "plc": "zero",
+    "sqnr_db": 19.22720462036404,
+    "recv": {
+      "buffer_ms": 60,
+      "plc": "zero",
+      "codec": "mulaw",
+      "frames_out": 352,
+      "received": 335,
+      "lost": 17,
+      "late": 0,
+      "dup": 0,
+      "reordered": 0,
+      "overflow": 0,
+      "concealed": 17,
+      "avg_delay_ms": 60.4,
+      "max_delay_ms": 61.5
+    },
+    "send": {
+      "codec": "mulaw",
+      "frames": 352,
+      "bytes": 116900
+    }
+  },
+  {
+    "codec": "mulaw",
+    "plc": "repeat",
+    "sqnr_db": 14.618844224569504,
+    "recv": {
+      "buffer_ms": 60,
+      "plc": "repeat",
+      "codec": "mulaw",
+      "frames_out": 352,
+      "received": 335,
+      "lost": 17,
+      "late": 0,
+      "dup": 0,
+      "reordered": 0,
+      "overflow": 0,
+      "concealed": 17,
+      "avg_delay_ms": 61.5,
+      "max_delay_ms": 63.2
+    },
+    "send": {
+      "codec": "mulaw",
+      "frames": 352,
+      "bytes": 116900
+    }
+  }
+]

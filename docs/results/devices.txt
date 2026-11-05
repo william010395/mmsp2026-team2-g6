@@ -1,0 +1,6 @@
+喇叭（playback）：1 個
+  [0] Discard all samples (playback) or generate zero samples (capture)
+麥克風（capture）：1 個
+  [0] Discard all samples (playback) or generate zero samples (capture)
+後端：ALSA
+共 2 個裝置
